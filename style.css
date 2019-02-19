@@ -1,8 +1,11 @@
 body {
   text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #00ff00, #0000ff);
+}
+
+.big-text{
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-size: 3em;
-  color: rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to right, #00ff00, #0000ff);
 }
