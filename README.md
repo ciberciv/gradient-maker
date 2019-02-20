@@ -1,4 +1,10 @@
-This is a simple project to learn about event listeners. 
-I will keep coming back to this to add some improvements, like:
+Simple background/gradient generator
+
+Things I'd like to add:
 - Color palletes to combine with the generated background
 - A button to copy the code directly
+
+Things added:
+- Background update (basic)
+- Background code shown (basic)
+- Random background generation
