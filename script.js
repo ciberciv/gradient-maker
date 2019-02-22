@@ -1,25 +1,23 @@
-var firstColor = document.getElementById("Color1");
-var secondColor = document.getElementById("Color2");
-var randomize = document.getElementById("Randomize");
-var style = document.getElementById("BackgroundStyle");
-var body = document.getElementsByTagName("body")[0];
+let firstColor = document.getElementById("Color1");
+let secondColor = document.getElementById("Color2");
+let randomize = document.getElementById("Randomize");
+let style = document.getElementById("BackgroundStyle");
+const body = document.getElementsByTagName("body")[0];
 
-function changeColor(){
+const changeColor = () => {
   body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
 
   style.innerHTML = "background: linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ");";
-}
+};
 
-function randomHexColor(){
-  return "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-}
+const randomHexColor = () => "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
 
-function randomBackgroud(){
+const randomBackgroud = () => {
   firstColor.value = randomHexColor();
   secondColor.value = randomHexColor();
 
   changeColor()
-}
+};
 
 changeColor()
 
